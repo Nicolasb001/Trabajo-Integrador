@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+/****** HEADER ******/
+.mi-header {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mi-header div#logo {
+    width: 100px;
+}
+
+.mi-header #logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+#titulo-principal{
+    font-size: 60px;
+    color: gray;
+    margin-top:auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.menu div{
+    margin: 0 20px;
+}
+
+.a-menu{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.a-menu:hover{
+    color: red;
+    text-decoration: overline;
+    font-size: 25px;
+}
+
+/****** SECCION 1 ******/
+.seccion1 {
+    background-size: 200px;
+    color: white;
+    background-color: #292929;
+    padding: 20px 0 30px 0;
+    
+}
+
+.articulo1 h1 {
+    text-align: center;
+}
+
+.articulo1 {
+    background-color: #292929;
+}
+
+.alertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 30px 0;
+}
+
+.alertas .mi-alerta {
+    width: 350px;
+    height: 150px;
+    background-image: url(https://i.pinimg.com/originals/34/6c/71/346c71eddc08df7788c21103b8ef95c4.jpg);
+    background-size: 10%;
+}
+
+#img-seccion1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+#img-seccion1 a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+
+}
+
+#img-seccion1 a:hover {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+
+}
+#img-seccion1 img {
+    width: 20%;
+    border-radius: 10px;
+    padding: 0;
+}
+
+/****** SECCION 2 ******/
+.articulo2{
+    background-color: #292929;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitulo-sec2{
+    text-align: center;
+    color: white;
+}
+
+/****** SECCION 3 ******/
+.articulo3{
+    background-color:#292929;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.formu-text{
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+
+.ubicacion iframe{
+    width: 100%;
+    justify-content: end;
+}
+
+/****** FOOTER ******/
+.mi-footer {
+    background-color: white;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.footer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img img{
+    width: 100px;
+    border-radius: 50%;  
+}
+
+.datos-footer p{
+    margin-bottom: 0;
+}
+
+.copy p{
+    margin-top: 30px;
+    letter-spacing: 0.20em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.80em;
+    color: #6F6F6F;
+}
+
+
+/********* MEDIAS QUERIES *********/
+
+/*Dispositivo: celular*/
+@media(max-width: 426px){/*la condicion es que HASTA el tamaño de viewport de 426px se cumplan los siguientes estilos*/
+    #img-seccion1 {
+        flex-direction: column ;
+        
+    }
+
+    #img-seccion1 img {
+        width: 300px ;   
+        margin: 5px;
+    } 
+} 
+
+/*Dispositivo: tablet*/
+@media (min-width: 768px){ /*la condicion es que a partir del tamaño de viewport de 768px se cumplan los siguientes estilos*/
+    #img-seccion1{
+       flex-flow: row wrap;
+
+    }
+    #img-seccion1 img {
+        width: 300px ;
+
+    }
+}
+
+
+/*Dispositivo: laptop*/
+@media(min-width: 1024px){ /*la condicion es que a partir del tamaño de viewport de 1024px se cumplan los siguientes estilos*/
+    #img-seccion1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #img-seccion1 img{
+        width: 240px;
+    }
+
+}
